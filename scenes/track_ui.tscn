@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://bq2nfxr3mb2g2"]
+
+[ext_resource type="Script" uid="uid://bbqmjyc37yqik" path="res://scripts/track_ui.gd" id="1_2vto2"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2vto2"]
+resource_local_to_scene = true
+bg_color = Color(0, 0, 1, 0.09803922)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 1, 1)
+
+[node name="TrackUI" type="Panel" unique_id=55601384]
+custom_minimum_size = Vector2(0, 27)
+theme_override_styles/panel = SubResource("StyleBoxFlat_2vto2")
+script = ExtResource("1_2vto2")
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]

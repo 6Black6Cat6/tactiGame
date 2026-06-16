@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://d3vk18y556hqn"]
+
+[ext_resource type="Script" uid="uid://uany4r6vkru3" path="res://scripts/test.gd" id="1_bl13t"]
+
+[node name="test" type="VBoxContainer" unique_id=284741825]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_bl13t")

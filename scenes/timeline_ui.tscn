@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://d0sy18egl5ry5"]
+
+[ext_resource type="Script" uid="uid://dwh32uku1iuth" path="res://scripts/timeline_ui.gd" id="1_ureqo"]
+
+[node name="TimelineUI" type="VBoxContainer" unique_id=1619247941]
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_constants/separation = 0
+script = ExtResource("1_ureqo")
+
+[node name="Ruler" type="HBoxContainer" parent="." unique_id=2086485878]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="Tracks" type="VBoxContainer" parent="." unique_id=260214441]
+layout_mode = 2

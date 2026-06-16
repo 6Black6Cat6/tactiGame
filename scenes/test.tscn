@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://c8gbh1sdnkekx"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ij1v8"]
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+
+[node name="Control" type="Control" unique_id=1532560349]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 3
+anchors_preset = 0
+
+[node name="Label" type="Label" parent="." unique_id=1527666653]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_ij1v8")
+text = "test"

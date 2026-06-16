@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://0x1j3uo63662"]
+
+[ext_resource type="Script" uid="uid://b4j543sxt86tu" path="res://scripts/unit.gd" id="1_o6v8t"]
+[ext_resource type="PackedScene" uid="uid://cvngfr0lsyldy" path="res://scenes/sensor.tscn" id="2_1jvru"]
+[ext_resource type="PackedScene" uid="uid://cpyssdv8vk3qq" path="res://scenes/weapon.tscn" id="3_gic7v"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=637118615]
+script = ExtResource("1_o6v8t")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1035956339]
+
+[node name="Sensor" parent="." unique_id=1753801650 instance=ExtResource("2_1jvru")]
+
+[node name="Weapon" parent="." unique_id=1953191576 instance=ExtResource("3_gic7v")]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=839504483]
+
+[connection signal="lost" from="Sensor" to="." method="_on_sensor_lost"]
+[connection signal="see" from="Sensor" to="." method="_on_sensor_see"]

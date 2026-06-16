@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://cpyssdv8vk3qq"]
+
+[ext_resource type="Script" uid="uid://br83mdwnrcp4q" path="res://scripts/weapon.gd" id="1_xasec"]
+
+[node name="Weapon" type="Node2D" unique_id=1953191576]
+script = ExtResource("1_xasec")
+
+[node name="Polygon2D" type="Polygon2D" parent="." unique_id=1597613110]
+
+[node name="RayCast2D" type="RayCast2D" parent="." unique_id=93728376]

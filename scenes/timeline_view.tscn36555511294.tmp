@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://behxf0mfsnp6p"]
+
+[ext_resource type="Script" uid="uid://78ejlplgkqit" path="res://scripts/timeline_view.gd" id="1_ah0w8"]
+
+[node name="PanelContainer" type="PanelContainer" unique_id=1095265469]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -35.0
+grow_horizontal = 2
+grow_vertical = 0
+script = ExtResource("1_ah0w8")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1887486064]
+layout_mode = 2
+
+[node name="Hint" type="Label" parent="VBoxContainer" unique_id=231885738]
+layout_mode = 2
+text = "Карта: ПКМ=MOVE, Ctrl+ПКМ=ROTATE, Ctrl+Shift+ПКМ=WATCH, Q=SHOT, E=ATTACK, Space=Start"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer" unique_id=1201922422]
+layout_mode = 2
+horizontal_scroll_mode = 2
+vertical_scroll_mode = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/ScrollContainer" unique_id=1756669226]
+custom_minimum_size = Vector2(100000, 0)
+layout_mode = 2
+
+[node name="Seconds" type="Control" parent="VBoxContainer/ScrollContainer/VBoxContainer" unique_id=1189776166]
+layout_mode = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer" unique_id=249266583]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/HSplitContainer" unique_id=960130726]
+layout_mode = 2
+text = "12345"
+
+[node name="Label2" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/HSplitContainer" unique_id=1438697444]
+layout_mode = 2
+text = "qwerty"
