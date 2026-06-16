@@ -1,0 +1,37 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="tactiGame"
+run/main_scene="uid://b51muqtdd34c6"
+config/features=PackedStringArray("4.6", "Forward Plus")
+config/icon="res://icon.svg"
+
+[autoload]
+
+Runtime="*uid://cimldet3ilobx"
+
+[display]
+
+window/size/viewport_width=1200
+window/size/viewport_height=720
+
+[gui]
+
+common/show_focus_state_on_pointer_event=2
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+rendering_device/driver.windows="d3d12"
